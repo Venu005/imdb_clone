@@ -1,5 +1,4 @@
-## How to contirbute?
-clone this repo and run
-  #npm i
+This project is open for contirbuteions, clone this project and start contributing
 
-##
+#Major issue to fix as of Feb'7  2024
+ App failing at production due to pre render bug.

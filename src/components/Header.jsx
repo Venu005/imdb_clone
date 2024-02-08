@@ -15,7 +15,7 @@ function Header() {
       </div>
       <div className="flex gap-1 items-center">
         <ThemeSwitcher />
-        <Link href={"/home"} className="flex gap-1 items-center">
+        <Link href={"/"} className="flex gap-1 items-center">
           <span className="font-bold text-2xl ml-2 bg-amber-500 rounded-lg px-2 py-1 text-black dark:text-white">
             IMDb
           </span>

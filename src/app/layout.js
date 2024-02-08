@@ -3,9 +3,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Provider from "./Provider";
 import NavBar from "@/components/NavBar";
-import SeachBox from '@/components/SearchBox'
+import SeachBox from "@/components/SearchBox";
 import SearchBox from "@/components/SearchBox";
-
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({
@@ -24,9 +24,11 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <Provider>
           <Header />
-          <NavBar />
-        <SearchBox />
-        {children}
+          <Suspense>
+            <NavBar />
+          </Suspense>
+          <SearchBox />
+          {children}
         </Provider>
       </body>
     </html>
